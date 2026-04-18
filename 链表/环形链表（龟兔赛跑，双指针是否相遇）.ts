@@ -9,6 +9,14 @@ class ListNode4 {
 }
 function hasCycle(head: ListNode4 | null): boolean {
   if (!head || !head.next) return false;
-
-  return true;
+  let slow: ListNode4 | null = head;
+  let fast: ListNode4 | null = head.next;
+  while (fast !== null && fast.next !== null) {
+    slow = slow?.next!;
+    fast = fast.next?.next!;
+    if (slow === fast) {
+      return true;
+    }
+  }
+  return false;
 }
