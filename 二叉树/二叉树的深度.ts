@@ -10,10 +10,10 @@ class TreeNode1 {
     this.right = right ?? null;
   }
 }
-function maxDepth(root: TreeNode1 | null): number {
+function maxDepth1(root: TreeNode1 | null): number {
   if (!root) return 0;
-  const leftlength = maxDepth(root.left);
-  const rightlength = maxDepth(root.right);
+  const leftlength = maxDepth1(root.left);
+  const rightlength = maxDepth1(root.right);
   if (leftlength > rightlength) {
     return leftlength + 1;
   } else {
