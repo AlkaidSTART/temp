@@ -1,0 +1,85 @@
+那我直接给你一份**React 前端面试必背完整版**，包含：手写题 + 原理题 + 算法 + 高频考点，照着背就能应付大部分面试。
+
+# 一、React 必考手写题（现场必写）
+1. **手写 useState 简易实现**
+2. **手写 useEffect 原理**
+3. **手写 useMemo / useCallback**
+4. **手写简易 React 组件通信（父子/兄弟）**
+5. **手写自定义 Hooks（如 useRequest、useDebounce）**
+6. **手写简易 Redux / useReducer**
+7. **手写 Promise + 结合 React 使用**
+8. **手写防抖节流并封装成 Hook**
+
+# 二、React 核心原理（必问）
+- **虚拟 DOM & Diff 算法**
+  虚拟 DOM 是什么，diff 策略：同层比较、key 的作用、为什么不能用 index 当 key。
+- **Fiber 架构**
+  可中断渲染、时间切片、协调阶段 vs 提交阶段。
+- **Hooks 规则与原理**
+  为什么不能在条件/循环里用 Hooks？Hooks 是用链表存储的。
+- **setState 是同步还是异步**
+  合成事件中异步，原生事件/setTimeout 中同步；批量更新。
+- **React 更新机制**
+  函数组件渲染 = 执行函数；状态变 → 重新执行。
+- **类组件 vs 函数组件**
+
+# 三、Hooks 高频面试题
+- **useEffect 依赖为空数组代表什么？**
+- **useEffect 清理函数执行时机**
+- **useMemo 和 useCallback 区别、使用场景**
+- **useRef 用途：获取 DOM、存可变值、避免闭包陷阱**
+- **useImperativeHandle 作用**
+- **useContext + useReducer 实现状态管理**
+- **Hooks 闭包陷阱 & 解决方案**
+
+# 四、React 工程 & 优化
+- **React 性能优化手段**
+  - PureComponent / memo
+  - useMemo / useCallback
+  - 虚拟列表
+  - 懒加载 React.lazy / Suspense
+  - 减少不必要渲染
+- **React 合成事件**
+  为什么要合成事件？与原生事件区别？委托机制。
+- **React 错误边界**
+- **Portals 传送门用法**
+
+# 五、状态管理（必问）
+- Redux / Toolkit 工作流程
+- Redux 三大原则
+- useSelector、useDispatch
+- React Query / SWR 作用与优势
+- 状态设计原则
+
+# 六、路由 React Router
+- 路由模式：hash / history
+- 路由守卫怎么实现
+- useNavigate / useParams / useLocation
+- 懒加载路由
+
+# 七、结合你之前说的：算法 + 手写
+前端面试 React 岗最常考的算法：
+- 数组去重、扁平化
+- 防抖、节流
+- 深拷贝
+- 手写 Promise / Promise.all
+- 链表反转、环形链表
+- 二叉树遍历
+- 节流、函数柯里化
+
+# 八、场景题（高频）
+- 封装一个通用请求 Hook
+- 实现一个弹窗组件
+- 实现一个 tabs 切换
+- 长列表优化
+- 如何防止组件重复渲染
+- 父子组件执行顺序
+
+---
+
+如果你需要，我可以直接给你：
+1. **React 高频 30 道面试题+标准答案**
+2. **现场手写代码模板（直接背就能写）**
+3. **一套完整模拟面试（我问你答）**
+
+你想要哪个？
