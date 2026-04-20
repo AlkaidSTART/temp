@@ -9,3 +9,12 @@ class TreeNode {
     this.right = right ?? null;
   }
 }
+
+function inorderTraversal(root: TreeNode | null): number[] {
+  if (!root) return [];
+  const res: number[] = [];
+  res.push(...inorderTraversal(root.left));
+  res.push(root.val);
+  res.push(...inorderTraversal(root.right));
+  return res;
+}
